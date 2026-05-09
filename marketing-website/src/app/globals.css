@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #fdfbf7;
+  --canvas-alt: #fff5e6;
+  --ink: #0f172a;
+  --primary: #ff9f1c;
+  --primary-hover: #f48c06;
+  --secondary: #2ec4b6;
+  --coral: #ff595e;
+  --sunshine: #ffca3a;
+  --sky: #8ecae6;
+  --lavender: #cdb4db;
+}
+
+html,
+body {
+  background: var(--canvas);
+}
+
+body {
+  font-family: var(--font-quicksand), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-fredoka), sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.script {
+  font-family: var(--font-caveat-brush), cursive;
+}
+
+.container-shell {
+  @apply mx-auto max-w-7xl px-6 md:px-10 lg:px-24;
+}
+
+.section-space {
+  @apply py-20 md:py-28;
+}
+
+.tactile-shadow {
+  border: 2px solid var(--ink);
+  box-shadow: 4px 4px 0 0 var(--ink);
+  transition:
+    transform 240ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 240ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    background-color 240ms ease,
+    color 240ms ease;
+}
+
+.tactile-shadow:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 0 var(--ink);
+}
+
+.tactile-shadow:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 0 var(--ink);
+}
+
+.tactile-shadow-lg {
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 0 var(--ink);
+}
+
+.tactile-shadow-sm {
+  border: 2px solid var(--ink);
+  box-shadow: 3px 3px 0 0 var(--ink);
+}
+
+.sun-shadow {
+  box-shadow: 8px 8px 0 0 var(--sunshine);
+}
+
+.wavy {
+  text-decoration: underline;
+  text-decoration-thickness: 0.16em;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--sunshine);
+  text-underline-offset: 0.2em;
+}
+
+.highlight-swipe {
+  background-image: linear-gradient(
+    transparent 58%,
+    color-mix(in srgb, var(--sunshine) 90%, transparent) 58%
+  );
+  padding-inline: 0.2rem;
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#FF9F1C]/40;
+}
