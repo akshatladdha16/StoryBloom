@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import {
   ArrowRight,
-  BookOpen,
   Heart,
   Loader2,
   PencilLine,
@@ -146,8 +145,8 @@ export function LandingPage() {
       <header className="sticky top-0 z-40 border-b-2 border-ink bg-[rgba(253,251,247,0.85)] backdrop-blur-md">
         <div className="container-shell flex h-20 items-center justify-between">
           <a href="#top" className="flex items-center gap-3" data-testid="header-logo-link">
-            <span className="tactile-shadow-sm rounded-full bg-primary p-2.5">
-              <BookOpen className="h-5 w-5" />
+            <span className="tactile-shadow-sm overflow-hidden rounded-full border-2 border-ink bg-white">
+              <Image src="/images/icon.png" alt="Storybloom icon" width={44} height={44} className="h-11 w-11 object-cover" />
             </span>
             <span className="text-2xl font-semibold">Storybloom</span>
           </a>
@@ -235,10 +234,10 @@ export function LandingPage() {
           >
             <div className="tactile-shadow-lg overflow-hidden rounded-bl-2xl rounded-br-[5rem] rounded-tl-[5rem] rounded-tr-2xl bg-[#FFECCB] p-3">
               <Image
-                src="/images/mishika-cover.png"
-                alt="A child smiling while reading a colorful personalized Storybloom hardcover"
-                width={680}
-                height={760}
+                src="/images/hero.png"
+                alt="Storybloom hero artwork with a child, storybook, and colorful imagination elements"
+                width={1280}
+                height={1280}
                 className="h-[420px] w-full rounded-bl-2xl rounded-br-[4.5rem] rounded-tl-[4.5rem] rounded-tr-2xl object-cover"
                 priority
               />

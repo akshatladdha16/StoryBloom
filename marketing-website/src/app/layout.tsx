@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   title: "Storybloom | Personalized Storybooks for Kids",
   description:
     "Turn screen time into story time with personalized hardcover keepsakes for kids.",
+  icons: {
+    icon: "/images/icon.png",
+    shortcut: "/images/icon.png",
+    apple: "/images/icon.png",
+  },
 };
 
 export default function RootLayout({
